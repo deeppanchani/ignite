@@ -1,12 +1,25 @@
 .cnhbt{
     text-align: left;
-    margin-left: 20%;
+    margin-left: 19%;
 }
 
-.mainh{
-    font-size: 50px;
-    font-display: uppercase;
-    color:#010932;
+.cnhbt h1{
+    font-size: 100px; 
+    font-weight: 400; 
+    color: #010932;
+    display: inline;
+}
+
+.cnhbt span{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.cnhbt h3{
+    font-size: 70px; 
+    font-weight: 350; 
+    color: #010932;
+    display: inline;
 }
 
 .cnhbt a{
@@ -23,7 +36,7 @@
     color: white;
     padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 30px;
     margin: 4px 2px;
     opacity: 1;
     transition: 0.3s;
