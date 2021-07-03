@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="icon" href="image\logo.png" type="image/x-icon"/>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>LogIn</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Log In</div>
+        <form method="POST" autocomplete="on" name="contactus" action="profile.php">
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <label class="details" for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter E-mail"/>
+                </div>
+
+                <div class="input-box">
+                    <label class="details" for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" />
+                </div>
+
+            </div>
+
+            <div class="cookies">
+                <br />
+                <input type="checkbox" id="rememberme" name="rememberme" value="rememberme"/>
+                <label for="rememberme">Remember Me</label><br/>
+
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    <div>
+</body>
+</html>
