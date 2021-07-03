@@ -26,6 +26,8 @@ body{
 }
 
 .container .title{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .container .title::before{
@@ -40,6 +42,8 @@ body{
 
 .container form .user-details{
     display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;  
 }
 
 form .user-details .input-box{
@@ -49,7 +53,12 @@ form .user-details .input-box{
 
 .user-details .input-box .details{
     display: block;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: 5px; 
+}
+
+.event-details .details{
+    font-weight: 600;
     margin-bottom: 5px; 
 }
 
@@ -60,4 +69,5 @@ form .user-details .input-box{
     border-radius: 5px;
     border: 1px solid #ccc;
     padding-left: 15px;
+    font-size: 16px;
 }
