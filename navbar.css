@@ -3,6 +3,9 @@
   background-color: #010932;
   font-family:  'Montserrat';
   text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar ul{
