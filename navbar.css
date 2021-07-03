@@ -3,7 +3,6 @@
   background-color: rgb(4, 4, 66);
   font-family: Arial;
   text-align: center;
-  
 }
 
 .navbar ul{
@@ -41,7 +40,6 @@
 .dropdown {
   float: left;
   overflow: hidden;
- 
 }
 
 .dropdown .dropbtn {
@@ -57,9 +55,6 @@
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
-  background-size: cover;
- 
- 
 }
 
 .dropdown-content {
