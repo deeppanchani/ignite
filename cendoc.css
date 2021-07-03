@@ -1,0 +1,35 @@
+.cnhbt{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.mainh{
+    font-size: 50px;
+    font-display: uppercase;
+    color:#010932;
+}
+
+.cnhbt a{
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn{
+    background-color: #f4511e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.6
+}
