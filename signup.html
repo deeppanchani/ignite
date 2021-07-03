@@ -6,42 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="forms.css">
     <link rel="icon" href="image\logo.png" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Sign Up</title>
 </head>
 <body>
     <div class="container">
         <div class="title">Registration</div>
         <form method="POST" autocomplete="on" name="contactus" action="profile.php">
-            <label for="fname">Full Name</label><br/>
-            <input type="text" id="fname"/><br/>
+            <div class="user-details">
+                
+                <div class="input-box">
+                    <label class="details" for="fname">Full Name</label>
+                    <input type="text" id="fname"/>
+                </div>
 
-            <label for="email">Email</label><br/>
-            <input type="email" id="email"/><br/>
+                <div class="input-box">
+                    <label class="details" for="email">Email</label>
+                    <input type="email" id="email"/>
+                </div>
 
-            <label for="pnumber">Phone Number</label><br/>
-            <input type="number" id="pnumber"/><br/>
+                <div class="input-box">
+                    <label class="details" for="pnumber">Phone Number</label>
+                    <input type="number" id="pnumber"/>
+                </div>
 
-            <label for="password">Password</label><br/>
-            <input type="password" id="password"/><br/>
+                <div class="input-box">
+                    <label class="details" for="password">Password</label>
+                    <input type="password" id="password"/>
+                </div>
 
-            <label for="events">Select the events you want to participate:</label><br/>
-            <input type="checkbox" id="event1" name="events" value="dancing-competition"/>
-            <label for="event1">Dancing Competition</label><br/>
-            <input type="checkbox" id="event2" name="events" value="singing-competition"/>
-            <label for="event2">Singing Competition</label><br/>
-            <input type="checkbox" id="event3" name="events" value="gaming-competition"/>
-            <label for="event3">Gaming Competition</label><br/>
+            </div>
 
-            <label for="activity">Select the activities you want to participate:</label><br/>
-            <input type="checkbox" id="activity1" name="activity" value="bill-gates-talks"/>
-            <label for="activity1">Bill Gates Talks</label><br/>
-            <input type="checkbox" id="activity2" name="activity" value="sudha-murthy-talks"/>
-            <label for="activity2">Sudha Murthy Talks</label><br/>
-            <input type="checkbox" id="activity3" name="activity" value="treasure-hunt"/>
-            <label for="activity3">Treasure Hunt</label><br/>
+            <div class="event-details">
 
-            <input type="submit" value="Submit">
+                <label for="events">Select the events you want to participate:</label><br/>
+                <input type="checkbox" id="event1" name="events" value="dancing-competition"/>
+                <label for="event1">Dancing Competition</label><br/>
+                <input type="checkbox" id="event2" name="events" value="singing-competition"/>
+                <label for="event2">Singing Competition</label><br/>
+                <input type="checkbox" id="event3" name="events" value="gaming-competition"/>
+                <label for="event3">Gaming Competition</label><br/>
 
+                <label for="activity">Select the activities you want to participate:</label><br/>
+                <input type="checkbox" id="activity1" name="activity" value="bill-gates-talks"/>
+                <label for="activity1">Bill Gates Talks</label><br/>
+                <input type="checkbox" id="activity2" name="activity" value="sudha-murthy-talks"/>
+                <label for="activity2">Sudha Murthy Talks</label><br/>
+                <input type="checkbox" id="activity3" name="activity" value="treasure-hunt"/>
+                <label for="activity3">Treasure Hunt</label><br/>
+
+                <input type="submit" value="Submit">
+            </div>
         </form>
     <div>
 </body>
