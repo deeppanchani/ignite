@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<style>
+body {
+  color: #010932;
+  font-family: 'Montserrat';
+}
+table,td {
+  border : 2px solid #FFFFFF;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+td {
+  padding: 2em;
+  text-align: center;
+}
+tr:nth-child(odd) {
+  background-color:#FFCA18;
+}
+tr:nth-child(even) {
+  background-color:#FF9100;
+}
+</style>
+<body>
+  <div id='content' align="center">
+    <table id='date_sheet'>
+        <thead>
+            <tr style="font-weight: 600;font-size: 1.5em;color: #FFFFFF; background-color: #010932;">
+                <td>Event</td>
+                <td>Date</td>
+            </tr>                
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+  </div>
+  <script>
+    let xmlContent = '';
+    let tableEvents = document.getElementById('date_sheet');
+    fetch('date_sheet.xml').then((response)=> {
+        response.text().then((xml)=>{
+            xmlContent = xml;
+
+            let parser = new DOMParser();
+            let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+            let events = xmlDOM.querySelectorAll('event');
+
+            events.forEach(eventXmlNode => {
+
+                let row = document.createElement('tr');
+
+                //author
+                let td = document.createElement('td');
+                td.innerText = eventXmlNode.children[0 ].innerHTML;
+                row.appendChild(td);
+
+                //  title
+                td = document.createElement('td');
+                td.innerText = eventXmlNode.children[1].innerHTML;
+                row.appendChild(td);
+
+                tableEvents.children[1].appendChild(row);
+                
+            });
+        });
+    });
+  </script>
+</body>
+</html>
