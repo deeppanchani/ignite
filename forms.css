@@ -59,7 +59,7 @@ form .user-details .input-box{
 
 .event-details .details{
     font-weight: 600;
-    margin-bottom: 5px; 
+    margin-bottom: 20px; 
 }
 
 .user-details .input-box input{
@@ -70,4 +70,13 @@ form .user-details .input-box{
     border: 1px solid #ccc;
     padding-left: 15px;
     font-size: 16px;
+}
+
+.submit
+{
+    margin-top: 20px;
+    padding: 8px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Montserrat';
 }
