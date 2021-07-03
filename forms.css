@@ -5,15 +5,10 @@
 }
 
 body{
-
     font-family: 'Montserrat';
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(180deg,#FFCA18,#ff6600);
     color: #010932;
-    padding: 10px;
+    height: 100%;
 }
 
 .container{
@@ -23,6 +18,7 @@ body{
     box-shadow: 2px 2px 5px #010932 ;
     padding: 25px 30px;
     border-radius: 5px;
+    justify-self: center;
 }
 
 .container .title{
