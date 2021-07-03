@@ -1,7 +1,7 @@
 .navbar {
   overflow: hidden;
   background-color: #010932;
-  font-family: Arial;
+  font-family:  'Montserrat';
   text-align: center;
 }
 
@@ -52,12 +52,12 @@
   margin-top: 40px;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
   margin: 0; 
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: transparent;
+  color:#FF9100;
 }
 
 .dropdown-content {
@@ -79,6 +79,7 @@
 }
 
 .dropdown-content a:hover {
+  
 }
 
 .dropdown:hover .dropdown-content {
