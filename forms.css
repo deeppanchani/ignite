@@ -26,8 +26,6 @@ body{
 }
 
 .container .title{
-    font-size: 25px;
-    font-weight: 500;
 }
 
 .container .title::before{
@@ -42,7 +40,6 @@ body{
 
 .container form .user-details{
     display: flex;
-    flex-wrap: wrap;   
 }
 
 form .user-details .input-box{
