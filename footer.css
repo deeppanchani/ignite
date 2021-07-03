@@ -1,12 +1,15 @@
 .mfoot{
+    margin-top: 3em;
     background-color: #010932;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.ftlog{
+  margin-top: 1em;  
+}
 .ftlog img{
     margin-bottom: 20px;
-    width: 50px;
     height: 100px;
     float: inline;
 }
@@ -14,7 +17,7 @@
     text-align: center;
     font-size: 45px;
     font-weight: bold;
-    color: firebrick;
+    color: rgb(255, 0, 0);
 }
 .row{
     margin: 0;
@@ -32,40 +35,40 @@
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#33353d;
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
 }
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
   {
-    margin-bottom:30px
+    margin-bottom:30px;
   }
 }
 @media (max-width:767px)
 {
   .site-footer
   {
-    padding-bottom:0
+    padding-bottom:0;
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
   }
 }
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
 }
 .social-icons li
 {
   display:inline-block;
-  margin-bottom:4px
+  margin-bottom:4px;
 }
 .social-icons li.title
 {
@@ -73,7 +76,7 @@
   text-transform:uppercase;
   color:#96a2b2;
   font-weight:700;
-  font-size:13px
+  font-size:13px;
 }
 .social-icons a{
   background-color:#eceeef;
@@ -88,31 +91,31 @@
   border-radius:100%;
   -webkit-transition:all .2s linear;
   -o-transition:all .2s linear;
-  transition:all .2s linear
+  transition:all .2s linear;
 }
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
-  background-color:#29aafe
+  background-color:#29aafe;
 }
 .social-icons.size-sm a
 {
   line-height:34px;
   height:34px;
   width:34px;
-  font-size:14px
+  font-size:14px;
 }
 .social-icons a.facebook:hover
 {
-  background-color:#3b5998
+  background-color:#3b5998;
 }
 .social-icons a.twitter:hover
 {
-  background-color:#00aced
+  background-color:#00aced;
 }
 .social-icons a.linkedin:hover
 {
-  background-color:#007bb6
+  background-color:#007bb6;
 }
 .social-icons a.youtube:hover
 {
@@ -131,6 +134,6 @@
   {
     display:block;
     margin-right:0;
-    font-weight:600
+    font-weight:600;
   }
 }

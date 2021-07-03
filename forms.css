@@ -11,7 +11,7 @@ body{
     height: 100%;
 }
 
-.container{
+.containers{
     max-width: 700px;
     width: 100%;
     background-color: #FFFFFF;
@@ -21,12 +21,12 @@ body{
     justify-self: center;
 }
 
-.container .title{
+.containers .title{
     font-size: 30px;
     font-weight: 600;
 }
 
-.container .title::before{
+.containers .title::before{
     content: '';
     position: absolute;
     left: 0;
@@ -36,7 +36,7 @@ body{
     background: linear-gradient(120deg,#FFCA18,#ff6600);
 }
 
-.container form .user-details{
+.containers form .user-details{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-between;  
