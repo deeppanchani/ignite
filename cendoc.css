@@ -30,20 +30,52 @@
     transition: 0.3s;
 }
 
-.btn{
+.button {
+    border-radius: 4px;
     background-color: #f4511e;
     border: none;
-    border-radius: 8px;
-    color: white;
-    padding: 16px 32px;
+    color: #FFFFFF;
     text-align: center;
-    font-size: 30px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
+    
+    padding: 10px 14px;
+    width: 240px;
+  
     cursor: pointer;
-}
+    margin: 5px;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
 
-.btn:hover{
-    opacity: 0.6
-}
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #140253;
+  }
+  
+  .button span {
+      
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 27px;;
+  }
+  
+  .button span:after {
+    
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+   
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
