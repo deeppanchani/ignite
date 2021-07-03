@@ -80,6 +80,72 @@
     right: 0;
   }
 
+  .aboutcont{
+    background-image: url('image/aboutus.jpg');
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    margin-top: -70px;
+  }
+
+  .conth{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 8%;
+    font-weight: 400;
+    font-size: 80px;
+    text-decoration: underline;
+    color: rgb(241, 79, 15);
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(226, 109, 63);
+  }
+
+  .conabout{
+    color: aliceblue;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+  .conthe{
+    color: rgb(241, 79, 15); 
+    font-size: 50px; 
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15%;
+    font-weight: 100;
+  }
+
+  .eventcont .conth{
+    text-align: center;
+    font-weight: 400;
+    font-size: 100px;
+    text-decoration: underline;
+    color: black;
+    text-decoration-thickness: 5px;
+    text-decoration-color: black;
+  }
+
+  .actcont .conth{
+    text-align: center;
+    font-weight: 400;
+    font-size: 100px;
+    text-decoration: underline;
+    color: black;
+    text-decoration-thickness: 5px;
+    text-decoration-color: black;
+  }
+
+  .sponcont .conth{
+    text-align: center;
+    font-weight: 400;
+    font-size: 100px;
+    text-decoration: underline;
+    color: black;
+    text-decoration-thickness: 5px;
+    text-decoration-color: black;
+  }
+
   section#tech{
     padding: 2em;
     background-color: rgb(255, 255, 255);
