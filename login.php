@@ -81,9 +81,9 @@ if(isset($_POST['email'])&&isset($_POST['password'])) {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Dancing Competition</a>
-                        <a href="#">Singing Competition</a>
-                        <a href="#">Gaming Competition</a>
+                        <a href="events.html#dance">Dancing Competition</a>
+                        <a href="events.html#sing">Singing Competition</a>
+                        <a href="events.html#game">Gaming Competition</a>
                     </div>
                 </div>
             </li>
@@ -93,9 +93,9 @@ if(isset($_POST['email'])&&isset($_POST['password'])) {
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Bill Gates Talks</a>
-                        <a href="#">Sudha Murthy Talks</a>
-                        <a href="#">Treasure Hunt</a>
+                        <a href="Activites.html#treasure">Treasure Hunt</a>
+                        <a href="Activites.html#quiz">Sports Quiz</a>
+                        <a href="Activites.html#movie">Movie Nights</a>
                     </div>
                 </div>    
             </li>
