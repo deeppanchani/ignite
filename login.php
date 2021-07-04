@@ -1,3 +1,35 @@
+<?php
+    $email_err = "";
+    $password_err = "";
+    $email = "";
+    $password = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if(empty($_POST["email"])){
+            $email_err = "Please insert your email ";
+        } 
+        else if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+            $email_err = "Not A Valid Email";
+        }
+        else{
+            $email = test_input($_POST["email"]);
+        }
+
+        if(empty($_POST["password"])){
+            $password_err = "Please insert your password ";
+        }
+        else{
+            $password = test_input($_POST["password"]);
+        }
+    }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,28 +91,20 @@
     <section style="margin: auto;padding: auto;width: 50%;margin-top: 3em;">
         <div class="holder">
             <div class="title">Log In</div>
-            <form method="POST" autocomplete="on" name="contactus" action="profile.php">
+            <form method="POST" autocomplete="on" name="contactus" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="user-details">
                     
                     <div class="input-box">
                         <label class="details" for="email">Email</label>
                         <input name="email" type="email" id="email" placeholder="Enter E-mail"/>
-                    <br/>
-                    <?php if(isset($email_err)){ ?>
-                    <p><?php echo $email_err?></p>
-                    <?php } ?>
+                        <span><?php echo $email_err;?></span>
                     </div>
 
                     <div class="input-box">
                         <label class="details" for="password">Password</label>
                         <input name="password" type="password" id="password" placeholder="Enter Password" />
-                    <br/>
-                    <?php if(isset($password_err)){ ?>
-                    <p><?php echo $password_err?></p>
-                    <?php } ?>
+                        <span><?php echo $password_err;?></span>
                     </div>
-
-                </div>
 
                 <div class="cookies">
                     <br />
