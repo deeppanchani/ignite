@@ -177,7 +177,7 @@
                     <input class="submit" type="submit" value="Submit">
                     <br/>
                     <br/>
-                    <p align="center">Already Registered.<a href="login.html">Log In</a>.</p>
+                    <p align="center">Already Registered.<a href="login.php">Log In</a>.</p>
                 </div>
             </form>
         <div>
