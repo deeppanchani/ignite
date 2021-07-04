@@ -18,7 +18,8 @@
             $fname_err = "Only Aplphabets Allowed";
         }
         else{
-            $fname = test_input($_POST["email"]);
+            $fname = test_input($_POST["fname"]);
+            setcookie('fname',$fname,time() + (86400 * 30),'/');
         }
 
         if(empty($_POST["email"])){
@@ -29,13 +30,15 @@
         }
         else{
             $email = test_input($_POST["email"]);
+            setcookie('email',$email,time() + (86400 * 30),'/');
         }
 
         if(empty($_POST["pnumber"])){
             $pnumber_err = "Please insert your Phone Number";
         }
         else{
-            $pnumber = test_input($_POST["password"]);
+            $pnumber = test_input($_POST["pnumber"]);
+            setcookie('pnumber',$pnumber,time() + (86400 * 30),'/');
         }
 
         if(empty($_POST["password"])){
@@ -46,6 +49,7 @@
         }
         else{
             $password = test_input($_POST["password"]);
+            setcookie('password',$password,time() + (86400 * 30),'./');
         }
 
         if(empty($_POST['events']) && empty($_POST['activity'])){
