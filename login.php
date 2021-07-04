@@ -30,6 +30,24 @@
         return $data;
     }
 ?>
+
+<?php
+
+setcookie('email',$email,time() + (86400 * 30),'/');
+setcookie('password',$password,time() + (86400 * 30),'/');
+
+if(isset($_POST['rememberme'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if(isset($_COOKIE[$email]) && isset($_COOKIE[$password])) {
+        echo "you have succefully logged in";
+    }
+    else {
+         echo "please sign up";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
