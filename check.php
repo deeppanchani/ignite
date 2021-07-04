@@ -5,4 +5,7 @@
     $pnumber = $_POST['pnumber'];
     $password = $_POST['password'];
 
+    $event[] = $_POST['events'];
+    $activity[] = $_POST['activity'];
+
 ?>
