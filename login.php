@@ -33,18 +33,23 @@
 
 <?php
 
-setcookie('email',$email,time() + (86400 * 30),'/');
-setcookie('password',$password,time() + (86400 * 30),'/');
-
-if(isset($_POST['rememberme'])) {
+if(isset($_POST['email'])&&isset($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    if(isset($_COOKIE[$email]) && isset($_COOKIE[$password])) {
-        echo "you have succefully logged in";
+    if(($_COOKIE['email']==$email)&&($_COOKIE['password']==$password)) {
+        ?>
+        <script>
+        location.replace("./index.html");
+        </script>
+        <?php   
     }
     else {
-         echo "please sign up";
+    ?>
+        <script>
+            alert('wrong email address or password');
+        </script>
+    <?php
     }
 }
 ?>
