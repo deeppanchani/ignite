@@ -83,18 +83,18 @@
 <!--##############################################-->
     <!--Nav Starts-->
     <div class="navbar" style="position: relative;">
-        <a href="#home"><img src="image/logo.png" style="width: 50px;"></a>
+        <a href="index.html"><img src="image/logo.png" style="width: 50px;"></a>
         <ul class="centreul">                
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
                 <div class="dropdown">
                     <button class="dropbtn">Events
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Dancing Competition</a>
-                        <a href="#">Singing Competition</a>
-                        <a href="#">Gaming Competition</a>
+                        <a href="events.html#dance">Dancing Competition</a>
+                        <a href="events.html#sing">Singing Competition</a>
+                        <a href="events.html#game">Gaming Competition</a>
                     </div>
                 </div>
             </li>
@@ -104,17 +104,16 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">Bill Gates Talks</a>
-                        <a href="#">Sudha Murthy Talks</a>
-                        <a href="#">Treasure Hunt</a>
+                        <a href="Activites.html#treasure">Treasure Hunt</a>
+                        <a href="Activites.html#quiz">Sports Quiz</a>
+                        <a href="Activites.html#movie">Movie Nights</a>
                     </div>
                 </div>    
             </li>
         </ul>
         <ul class="rightul">
-            <li><a href="#">Register</a></li>
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="signup.php">Register</a></li>
+            <li><a href="login.php">Log In</a></li>
         </ul>
     </div>
     <!--Nav Ends-->
