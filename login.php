@@ -101,9 +101,8 @@ if(isset($_POST['email'])&&isset($_POST['password'])) {
             </li>
         </ul>
         <ul class="rightul">
-            <li><a href="signup.html">Register</a></li>
-            <li><a href="login.html">Log In</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="signup.php">Register</a></li>
+            <li><a href="login.php">Log In</a></li>
         </ul>
     </div>
     <!--Nav Ends-->
@@ -137,7 +136,7 @@ if(isset($_POST['email'])&&isset($_POST['password'])) {
                     <input class="submit" type="submit" value="Submit">
                     <br/>
                     <br/>
-                    <p align="center">If Not Registered.<a href="signup.html">Sign Up</a>.</p>
+                    <p align="center">If Not Registered.<a href="signup.php">Sign Up</a>.</p>
                 </div>
             </form>
         <div>
