@@ -1,3 +1,53 @@
+<?php
+    $fname_err = "";
+    $email_err = "";
+    $pnumber_err = "";
+    $password_err = "";
+    $selection_err = "";
+    $fname = "";
+    $email = "";
+    $pnumber = "";
+    $password = "";
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        if(empty($_POST["fname"])){
+            $fname_err = "Please insert your Full Name ";
+        } 
+        else{
+            $fname = test_input($_POST["email"]);
+        }
+
+        if(empty($_POST["email"])){
+            $email_err = "Please insert your email ";
+        } else{
+            $email = test_input($_POST["email"]);
+        }
+
+        if(empty($_POST["pnumber"])){
+            $pnumber_err = "Please insert your Phone Number";
+        } else{
+            $pnumber = test_input($_POST["password"]);
+        }
+
+        if(empty($_POST["password"])){
+            $password_err = "Please insert your password ";
+        } else{
+            $password = test_input($_POST["password"]);
+        }
+
+        if(empty($_POST['events']) && empty($_POST['activity'])){
+            $selection_err = "Select atleast one event or activity";
+        }
+    }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,44 +109,32 @@
     <section style="margin: auto;padding: auto;width: 50%;margin-top: 3em;">
         <div class="holder">
             <div class="title">Registration</div>
-            <form method="POST" autocomplete="on" name="contactus" action="check.php">
+            <form method="POST" autocomplete="on" name="contactus" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"    >
                 <div class="user-details">
                     
                     <div class="input-box">
                         <label class="details" for="fname">Full Name</label>
                         <input name="fname" type="text" id="fname" placeholder="Enter Full Name"/>
+                        <span><?php echo $fname_err;?></span>
                     </div>
-                    <br/>
-                    <?php if(isset($fname_err)){ ?>
-                    <p><?php echo $fname_err?></p>
-                    <?php } ?>
 
                     <div class="input-box">
                         <label class="details" for="email">Email</label>
                         <input name="email" type="email" id="email" placeholder="Enter E-mail"/>
+                        <span><?php echo $email_err;?></span>
                     </div>
-                    <br/>
-                    <?php if(isset($email_err)){ ?>
-                    <p><?php echo $email_err?></p>
-                    <?php } ?>
 
                     <div class="input-box">
                         <label class="details" for="pnumber">Phone Number</label>
                         <input name="pnumber" type="number" id="pnumber" placeholder="Enter Phone Number"/>
+                        <span><?php echo $pnumber_err;?></span>
                     </div>
-                    <br/>
-                    <?php if(isset($pnumber_err)){ ?>
-                    <p><?php echo $pnumber_err?></p>
-                    <?php } ?>
 
                     <div class="input-box">
                         <label class="details" for="password">Password</label>
                         <input name="password" type="password" id="password" placeholder="Enter Password" />
+                        <span><?php echo $password_err;?></span>
                     </div>
-                    <br/>
-                    <?php if(isset($password_err)){ ?>
-                    <p><?php echo $password_err?></p>
-                    <?php } ?>
 
                 </div>
 
@@ -117,6 +155,9 @@
                     <label for="activity2">Movie Night</label><br/>
                     <input type="checkbox" id="activity3" name="activity" value="treasure-hunt"/>
                     <label for="activity3">Treasure Hunt</label><br/>
+                    <br>
+                    <span><?php echo $selection_err;?></span>
+                    <br>
 
                     <input class="submit" type="submit" value="Submit">
                     <br/>
