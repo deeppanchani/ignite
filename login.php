@@ -64,12 +64,20 @@
                     
                     <div class="input-box">
                         <label class="details" for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter E-mail"/>
+                        <input name="email" type="email" id="email" placeholder="Enter E-mail"/>
+                    <br/>
+                    <?php if(isset($email_err)){ ?>
+                    <p><?php echo $email_err?></p>
+                    <?php } ?>
                     </div>
 
                     <div class="input-box">
                         <label class="details" for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter Password" />
+                        <input name="password" type="password" id="password" placeholder="Enter Password" />
+                    <br/>
+                    <?php if(isset($password_err)){ ?>
+                    <p><?php echo $password_err?></p>
+                    <?php } ?>
                     </div>
 
                 </div>
