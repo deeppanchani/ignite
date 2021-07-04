@@ -2,7 +2,7 @@
 {
     text-align: center;
     width: 100%;height: 48px;
-    color:white
+    color:black;
 
    
 }
@@ -56,4 +56,15 @@
     margin-right: 50px;
     margin-top: 20px;
     float: right;
+}
+
+.heading{
+    color: #FFCA18;
+    font-weight: 600;
+    margin-top: 70px;
+}
+
+.dates{
+    color:#eeff00;
+    font-size:28px;
 }
